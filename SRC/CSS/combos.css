@@ -4,16 +4,180 @@
 
 
 
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+
+}
+
+.botoescatalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.botoescatalogo a{
+    margin: 10px;
+    display: flex;
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+.botoescatalogo a:hover {
+    background-color: red;
+    color: white;
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
 
 
+.cardCombos {
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--fundo1);
+    display: flex;
+    font: var(--fonteCard);
+    margin-top: 50px;
+    
+
+}
+.parte2 { 
+    margin-left:25px;
 
 
+}
+.cardCombo {
+    margin: 25px;
+    text-transform: bold;
+    font-size: 1rem;
+    width: 350px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.cardCombo .cardCombo:hover{
+    box-shadow: 0 2px 2px 0 red;
+border-bottom: 2px solid red ;
+border-right: 2px solid  red;
+    color: white;
+}
+.cardCombo h1{
+    margin: 10px;
+    font: var(--fonteCard);
+    font-size: 1rem;
+    padding: 15px;
+
+}
+.cardCombo li{
+    margin: 10px;
+}
 
 
+.cardCombo h3{
+    margin: 10px;
 
+    padding: 15px;
+    font-size: 1.5rem;
+   border-bottom: 3px solid red;
+}
+.cardCombo a{
+    font: var(--fonteCard);
+    text-decoration: none;
+    border: 1px solid rgb(4, 3, 3);
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.boxcardcombo{
+    border: 1px solid red;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--fundo1);
+    display: flex;
+    font: var(--fonteCard);
+    margin-top: 50px;
+    align-items: center;
+    margin: 5px;
+}
+.imgcardcombo img{
+    margin: 15px;
+   
+}
 
+.cardCombo #imgcard{
+    width: 25px;
+    margin-right: 15px ;
+}
 
+.cardCombo a:hover{
+    background-color: rgba(255, 0, 0, 0.882);
+    color: white;
 
+    
+}
+
+@media (max-width:1024px) {
+    .imgcardcombo img{
+        width: 500px;
+    }
+}
+        
+@media(max-width:768px){
+    .catalogo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 25px;
+        flex-wrap: wrap;
+    }
+    .catalogo img{
+        margin-top: 15px;
+        width: 250px;
+    }
+    .infocatalogo p{
+        padding: 25px;
+        margin: 15px;
+        text-align: justify;
+
+    }
+    .infocatalogo h1{
+        padding: 25px;
+        margin: 15px;
+
+    }
+    .infocatalogo h2{
+        padding: 25px;
+        margin: 15px;
+
+    }
+    .imgcardcombo img{
+        width: 300px;
+    }
+}
+@media(max-width:425px){
+    .imgcardcombo img{
+        width: 350px;
+    }
+    .imgcardcombo img{
+        width: 200px;
+    }
+    .boxcardcombo{
+        max-width: 320px;
+    }
+
+}
 
 
 
